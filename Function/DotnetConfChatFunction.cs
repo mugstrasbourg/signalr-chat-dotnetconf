@@ -35,8 +35,8 @@ namespace MUGStrasbourg.Function
             await messages.AddAsync(
                 new SignalRMessage
                 {
-                    Target = "newMessage",
-                    Arguments = new[] { messageModel.Message }
+                    Target = "notify",
+                    Arguments = new[] { messageModel.Message, messageModel.Owner }
                 });
         }
     }

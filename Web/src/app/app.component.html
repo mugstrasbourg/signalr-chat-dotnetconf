@@ -1,0 +1,17 @@
+
+
+<div class="message-box">
+  <div class="messages-items">
+    <div *ngFor="let message of messages" class="message-item">
+      <div class="message-content" [class.message-content-self]="message.owner === name">
+        <div>{{message.message}}</div>
+        <div class="message-owner">{{message.owner}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<form class="example-form" (submit)="send(box.value); box.value = ''">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Votre message ..." #box />
+  </mat-form-field>
+</form>

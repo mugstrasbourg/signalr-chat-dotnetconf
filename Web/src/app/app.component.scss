@@ -1,0 +1,38 @@
+.example-form {
+    width: 100%;
+}
+
+  .message-box{
+    width: 100%;
+    height: calc(100% - 65.5px);
+    position: relative;
+  }
+
+  .messages-items{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+  }
+
+  .message-item {
+    margin: 10px;
+    font-size: 21px;
+    height: 62px;;
+  }
+
+  .message-owner {
+    font-size: 15px;
+    color: grey;
+  }
+
+  .message-content-self {
+    background: lightgreen !important;
+    float: right;
+  }
+
+  .message-content {
+    background: lightblue;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+  }
