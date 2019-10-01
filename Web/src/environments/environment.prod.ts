@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://mug-azurefunction.azurewebsites.net/api/'
+  apiUrl: 'https://chat-serverless.azurewebsites.net/api/'
 };
